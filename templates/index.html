@@ -7,7 +7,7 @@
         {% for order in orders %}  
         <div>
         <p>
-            {{ order.name }}: <b>{{ order.album }}</b>
+            <a href="/orders/{{ order.id }}">{{ order.name }}: <b>{{ order.album }}</b></a>
         </p>
         </div>
         {% endfor %}
