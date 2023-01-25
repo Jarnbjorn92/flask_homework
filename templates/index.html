@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }} - Connors Mad Music Shop</title>
+    </head>
+    <body>
+        <h1>Recent Orders</h1>
+        {% for order in orders %}  
+        <div>
+        <p>
+            {{ order.name }}: <b>{{ order.album }}</b>
+        </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
